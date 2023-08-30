@@ -1,0 +1,168 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#myVideo {
+    width: 100%;
+    /* height: 100%; */
+    /* width: 821.333px;
+    height: 462px; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+}
+
+.background-video{
+    position: relative;
+}
+
+.section-of-page{
+    padding: 30px;
+}
+
+.left-part{
+    width: 50%;
+    max-width: 500px;
+    position: fixed;
+}
+
+.header-of-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 160px;
+}
+
+.header-of-left h1{
+    background-color: white;
+    color: #099;
+    width: 100%;
+    height: 160px;
+    font-size: 2.2rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 800;
+}
+
+.navebar-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navebar-menu li{
+    min-width: 240px;
+    height: 100px;
+    background-color: white;
+    color: #099;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navebar-menu li a{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #099;
+    cursor: pointer;
+}
+
+.navebar-menu li:hover{
+    background-color: #099;
+}
+
+.navebar-menu li:hover a{
+    color: antiquewhite;
+}
+
+a:active{
+    color: antiquewhite;
+    background-color: #099;
+}
+
+.right-part{
+    width: 50%;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
+
+.header-of-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.6);
+    height: 80px;
+    color: white;
+    width: 710px;
+}
+
+.header-of-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.header-of-right a:hover{
+    color: #099;
+    border-bottom:  3px solid #099;
+}
+
+.header-of-right a:active{
+    color: #099;
+    border-bottom:  3px solid #099;
+}
+
+.menues ul li{
+    display: flex;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.menues ul li img{
+    margin-right: 20px;
+    width: 160px;
+    height: 160px;
+}
+
+.menues{
+    color: white;
+}
+
+.description-menues{
+    background-color: rgba(0,0,0,0.6);
+    width: 480px;
+    padding: 20px 25px;
+}
+
+.name-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.17em;
+}
+
+.price{
+    color: #099;
+}
+
+.description-menues{
+    line-height: 1.8;
+
+}
+.description-menues p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 700px){
+    #myVideo{
+        width: 816px;
+        top: 0;
+        height: 100%;
+        /* dorost kol safe nist */
+    }
+}
